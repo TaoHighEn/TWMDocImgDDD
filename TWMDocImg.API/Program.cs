@@ -5,7 +5,7 @@ using TWMDocImg.Infrastructure.Messaging;
 using TWMDocImg.Infrastructure.Messaging.Kafka.Extensions;
 using TWMDocImg.Infrastructure.Persistence;
 using TWMDocImg.Infrastructure.Messaging.EventBus;
-using static TWMDocImg.Application.Configurations.FileUploadOptions;
+using TWMDocImg.Application.Configurations;
 
 var builder = WebApplication.CreateBuilder(args);
 
