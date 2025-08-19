@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TWMDocImg.API", "TWMDocImg.API\TWMDocImg.API.csproj", "{F6005371-0AE6-4D85-87B2-4699A7F19A03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TWMDocImg.Application", "TWMDocImg.Application\TWMDocImg.Application.csproj", "{6F1109AE-6206-4407-B9FA-617F23BE41AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TWMDocImg.Domain", "TWMDocImg.Domain\TWMDocImg.Domain.csproj", "{5B6F950C-DE34-436A-8D0C-320DA7361FE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TWMDocImg.Infrastructure", "TWMDocImg.Infrastructure\TWMDocImg.Infrastructure.csproj", "{B43521E6-0F73-4A4F-9A54-8144FD718369}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6005371-0AE6-4D85-87B2-4699A7F19A03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6005371-0AE6-4D85-87B2-4699A7F19A03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6005371-0AE6-4D85-87B2-4699A7F19A03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6005371-0AE6-4D85-87B2-4699A7F19A03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F1109AE-6206-4407-B9FA-617F23BE41AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F1109AE-6206-4407-B9FA-617F23BE41AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F1109AE-6206-4407-B9FA-617F23BE41AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F1109AE-6206-4407-B9FA-617F23BE41AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B6F950C-DE34-436A-8D0C-320DA7361FE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B6F950C-DE34-436A-8D0C-320DA7361FE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B6F950C-DE34-436A-8D0C-320DA7361FE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B6F950C-DE34-436A-8D0C-320DA7361FE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B43521E6-0F73-4A4F-9A54-8144FD718369}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B43521E6-0F73-4A4F-9A54-8144FD718369}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B43521E6-0F73-4A4F-9A54-8144FD718369}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B43521E6-0F73-4A4F-9A54-8144FD718369}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

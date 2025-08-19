@@ -1,0 +1,11 @@
+# Kafka 客戶端
+dotnet add TWMDocImg.Infrastructure package Confluent.Kafka
+
+# Entity Framework Core (for SQL Server)
+dotnet add TWMDocImg.Infrastructure package Microsoft.EntityFrameworkCore.SqlServer
+dotnet add TWMDocImg.Infrastructure package Microsoft.EntityFrameworkCore.Tools
+
+# Serilog for Logging
+dotnet add TWMDocImg.API package Serilog.AspNetCore
+dotnet add TWMDocImg.API package Serilog.Sinks.Console
+dotnet add TWMDocImg.API package Serilog.Sinks.File

@@ -1,0 +1,31 @@
+# 建立一個解決方案檔案，用來管理所有專案
+dotnet new sln -n TWMDocImg
+
+# 1. 建立核心 API 專案 (API Layer)
+dotnet new webapi -n TWMDocImg.API
+dotnet sln add TWMDocImg.API/TWMDocImg.API.csproj
+
+# 2. 建立應用程式邏輯層專案 (Application Layer)
+dotnet new classlib -n TWMDocImg.Application
+dotnet sln add TWMDocImg.Application/TWMDocImg.Application.csproj
+
+# 3. 建立領域模型層專案 (Domain Layer)
+dotnet new classlib -n TWMDocImg.Domain
+dotnet sln add TWMDocImg.Domain/TWMDocImg.Domain.csproj
+
+# 4. 建立基礎設施層專案 (Infrastructure Layer)
+dotnet new classlib -n TWMDocImg.Infrastructure
+dotnet sln add TWMDocImg.Infrastructure/TWMDocImg.Infrastructure.csproj
+
+# 5. 設定專案之間的參考 (Dependencies)
+# API 層參考 Application 層
+dotnet add TWMDocImg.API/TWMDocImg.API.csproj reference TWMDocImg.Application/TWMDocImg.Application.csproj
+
+# Application 層參考 Domain 層
+dotnet add TWMDocImg.Application/TWMDocImg.Application.csproj reference TWMDocImg.Domain/TWMDocImg.Domain.csproj
+
+# Infrastructure 層參考 Application 層 (為了實作介面)
+dotnet add TWMDocImg.Infrastructure/TWMDocImg.Infrastructure.csproj reference TWMDocImg.Application/TWMDocImg.Application.csproj
+
+# API 層也需要參考 Infrastructure 層，以便在 Program.cs 中進行依賴注入
+dotnet add TWMDocImg.API/TWMDocImg.API.csproj reference TWMDocImg.Infrastructure/TWMDocImg.Infrastructure.csproj

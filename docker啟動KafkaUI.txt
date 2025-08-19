@@ -1,0 +1,4 @@
+docker run -d --name kafka-ui -p 8080:8080 `
+-e KAFKA_CLUSTERS_0_NAME=ubuntu-kafka `
+-e KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS=172.28.94.105:9092 `
+provectuslabs/kafka-ui:latest

@@ -1,0 +1,6 @@
+@TWMDocImg.API_HostAddress = http://localhost:5102
+
+GET {{TWMDocImg.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
